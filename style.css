@@ -1,0 +1,382 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* font-size: 100%; */
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+  font-family: dana !important;
+}
+li,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 10;
+  src: url("./font/woff2/Dana-Hairline.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-Hairline.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 100;
+  src: url("./font/woff2/Dana-Thin.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-Thin.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./font/woff2/Dana-UltraLight.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-UltraLight.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./font/woff2/Dana-Light.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-Light.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./font/woff2/Dana-Medium.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-Medium.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 600;
+  src: url("./font/woff2/Dana-DemiBold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-DemiBold.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 800;
+  src: url("./font/woff2/Dana-ExtraBold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-ExtraBold.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 900;
+  src: url("./font/woff2/Dana-Black.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-Black.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 930;
+  src: url("./font/woff2/Dana-ExtraBlack.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-ExtraBlack.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 960;
+  src: url("./font/woff2/Dana-Heavy.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-Heavy.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 990;
+  src: url("./font/woff2/Dana-fat.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-fat.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: bold;
+  src: url("./font/woff2/Dana-Bold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-Bold.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./font/woff2/Dana-Regular.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("./font/woff/Dana-Regular.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+body {
+  font-family: dana !important;
+  direction: rtl;
+  /* background-color: #cdcdcd; */
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  font-family: dana !important;
+}
+h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+.login-form {
+  width: 600px;
+  height: fit-content;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px 8px #efefef;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.right-side {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.right-side input {
+  width: 100%;
+  margin-top: 10px;
+  margin: 10px 2px 10px 5px;
+}
+.left-side {
+  flex-basis: 50%;
+  align-self: center;
+  margin: 10px;
+}
+.input-group > input {
+  margin-top: 15px;
+}
+div.input-group > div {
+  margin-top: 10px;
+}
+.child-3 {
+  position: relative;
+}
+#remember-me {
+  background-color: #c73333;
+  position: absolute;
+  top: -7px;
+  left: -25px;
+}
+div.submit input {
+  background-color: #3498db;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  transition: all ease 0.6s;
+}
+div.submit input:hover {
+  cursor: pointer;
+  background-color: #3c6480;
+}
+div.child-1 input {
+  border: 0;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 5px;
+}
+div.child-1 {
+  position: relative;
+}
+div.child-1 span {
+  background-color: #3498db;
+  display: block;
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 50px;
+  transition: all linear 0.6s;
+}
+div.child-1 input:focus ~ span {
+  width: 100%;
+}
+div.child-2 input {
+  border: 0;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 5px;
+}
+div.child-2 {
+  position: relative;
+}
+div.child-2 span {
+  background-color: #3498db;
+  display: block;
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 50px;
+  transition: all linear 0.6s;
+}
+div.child-2 input:focus ~ span {
+  width: 100%;
+}
+/* social */
+div.social {
+  margin-top: 10px;
+  display: flex;
+}
+div.social a {
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.fa-google {
+  color: #fff;
+  background-color: #ea4335;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: all ease 0.4s;
+}
+.fa-google:hover {
+  color: #ea4335;
+  background-color: #fff;
+}
+.fa-facebook {
+  color: #fff;
+  background-color: #1877f2;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: all ease 0.4s;
+}
+.fa-facebook:hover {
+  color: #1877f2;
+  background-color: #fff;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
